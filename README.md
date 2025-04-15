@@ -1,6 +1,6 @@
 # StudentsAdmin
 
-A simple ASP.NET Core MVC application with:
+A simple ASP.NET Core MVC application (template) with:
 - User registration and login via ASP.NET Identity
 - Admin-only CRUD functionality for managing students
 - Image upload with automatic resizing using ImageSharp
