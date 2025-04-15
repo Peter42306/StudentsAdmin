@@ -25,12 +25,29 @@
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.PhotoPath)
         </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.PhotoPath)
+        <dd class = "col-sm-10">            
+            @if (!string.IsNullOrEmpty(Model.PhotoPath))
+            {
+                <img src="@Model.PhotoPath" alt="Photo" style="max-width:450px; height:auto;" />
+            }
+            else
+            {
+                <span>No photo</span>
+            }
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    @if (User.IsInRole("Admin"))
+    {
+        <text>
+            <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+            <a asp-action="Index">Back to List</a>
+        </text>
+    }
+    else
+    {
+        <a asp-action="Index">Back to List</a>
+    }
+
 </div>

@@ -11,7 +11,7 @@ using StudentsAdmin.Data;
 namespace StudentsAdmin.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250415104547_InitialCreate")]
+    [Migration("20250415161501_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -159,11 +159,9 @@ namespace StudentsAdmin.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("ProviderDisplayName")
@@ -201,11 +199,9 @@ namespace StudentsAdmin.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Value")
