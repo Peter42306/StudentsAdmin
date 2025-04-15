@@ -6,7 +6,6 @@ A simple ASP.NET Core MVC application (template) with:
 - Image upload with automatic resizing using ImageSharp
 - SQLite database for easy setup
 - Loading images (SixLabors.ImageSharp)
-- Role-based Authorization
 
 ![image](https://github.com/user-attachments/assets/5cc685f0-d3f0-47ad-b6d6-c70ae78d498f)
 
